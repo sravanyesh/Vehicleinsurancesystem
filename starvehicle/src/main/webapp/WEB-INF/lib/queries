@@ -1,0 +1,23 @@
+create table if not exists Vehicleinsurance(
+policyNo varchar(20) PRIMARY KEY,
+vehicleNo varchar(20),
+vehicleType varchar(20),
+customerName varchar(20),
+engineNo INT,
+chasissNo INT,
+phoneNo BIGINT,
+insuranceType varchar(20),
+premiumAmount INT,
+fromDate date,
+toDate date,
+underwriterId varchar(10),
+ UNIQUE(policyNo),
+FOREIGN KEY (underwriterId) references Underwriter(underwriterId)
+)
+select * from Underwriter;
+select * from Vehicleinsurance;
+drop table Vehicleinsurance
+drop table Vehicleinsurance
+
+INSERT INTO Vehicleinsurance(policyNo,vehicleNo,vehicleType,customerName,engineNO,chasissNo,phoneNo,insuranceType,premiumAmount,fromDate,toDate,underwriterId)
+VALUES()

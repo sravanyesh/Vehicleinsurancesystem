@@ -1,0 +1,7 @@
+drop table Vehicleinsurance
+select Underwriter.underwriterId,Underwriter.name,Vehicleinsurance.vehicleNo,Vehicleinsurance.premiumAmount,Vehicleinsurance.fromDate,Vehicleinsurance.toDate from Underwriter
+INNER JOIN Vehicleinsurance on Underwriter.underwriterId='INC-00002'; 
+
+select *from Vehicleinsurance underwriterId.Underwriter=
+select *from Vehicleinsurance
+select *from Underwriter
